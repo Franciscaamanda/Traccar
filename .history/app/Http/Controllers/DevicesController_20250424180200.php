@@ -12,8 +12,8 @@ class DevicesController extends Controller
         $response = Http::withHeaders([
             'Content-Type'  => 'application/json' 
         ])->withBasicAuth(
-            env('Email_API'),
-            env('Password_API')
+            'franciscaamanda843@gmail.com',
+            '925378'
         )->get('https://demo.traccar.org/api/devices');
 
         return $response->body();
